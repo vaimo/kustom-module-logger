@@ -1,0 +1,24 @@
+{
+   "name": "vaimo/kustom-module-logger",
+    "description": "Kustom logging module",
+    "type": "magento2-module",
+    "license": "Apache-2.0",
+    "version": "3.0.9",
+    "scripts": {
+        "test": "phpunit",
+        "cov": "phpunit --coverage-html coverage"
+    },
+    "require": {
+        "ext-json": "*",
+        "magento/framework": "^103",
+        "monolog/monolog": "^2.3 || ^3.9.0",
+        "php": "~7.4.0||~8.1.0||~8.2.0||~8.3.0||~8.4.0",
+        "psr/log": "^1.0||^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Klarna\\Logger\\": "."
+        },
+        "files": [ "registration.php" ]
+    }
+}
